@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${poppins.className} min-h-screen bg-background antialiased`}
       >
         <Header />
-        {children}
+        <main className="container mx-auto">{children}</main>
         <Footer />
       </body>
     </html>
