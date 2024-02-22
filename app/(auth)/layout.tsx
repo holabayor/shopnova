@@ -11,7 +11,7 @@ export default function AuthLayout({
       <div className="hidden md:flex w-1/2">
         <Image src={shopping_cart} objectFit="cover" alt="shopping cart" />
       </div>
-      <div className="flex flex-col w-full md:w-1/2 max-w-[400px] mx-auto my-auto">
+      <div className="flex flex-col w-full md:w-1/2 max-w-[400px] m-auto">
         {children}
       </div>
     </div>

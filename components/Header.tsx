@@ -17,15 +17,10 @@ const Header = () => {
   };
 
   return (
-    <nav className="container mx-auto border-b py-4">
+    <nav className="container border-b py-4">
       <div className="flex justify-between items-center">
         <Logo />
-        {/* <div className="hidden md:flex gap-4">
-          <div>Home</div>
-          <div>Contact</div>
-          <div>About</div>
-          <div>Sign up</div>
-        </div> */}
+
         <div className="w-2/4 items-center">
           <label htmlFor="search" className="sr-only"></label>
           <div className="relative">

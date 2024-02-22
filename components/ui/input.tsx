@@ -38,4 +38,21 @@ const InputWithBottomBorder = React.forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-export { Input, InputWithBottomBorder };
+const SearchBox = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ className, ...props }, ref) => {
+    return (
+      <input
+        type="search"
+        className={cn(
+          'flex h-10 w-full text-xs md:text-sm outline-none ring-offset-0',
+          className
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+SearchBox.displayName = 'SearchBox';
+
+export { Input, InputWithBottomBorder, SearchBox };

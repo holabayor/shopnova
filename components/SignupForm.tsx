@@ -43,7 +43,7 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4 justify-between">
           <FormField
             control={form.control}
             name="firstName"
@@ -113,7 +113,7 @@ const SignupForm = () => {
           Already have an account?
           <Link
             href={'/login'}
-            className="font-normal hover:border-b transition-all"
+            className="font-normal border-b border-b-slate-500 hover:border-black transition-all"
           >
             Login
           </Link>

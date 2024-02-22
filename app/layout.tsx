@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} min-h-screen bg-background antialiased`}
+        className={`${poppins.className} flex flex-col min-h-screen bg-background antialiased`}
       >
         <Header />
-        <main className="container mx-auto">{children}</main>
+        <main className="container flex flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
