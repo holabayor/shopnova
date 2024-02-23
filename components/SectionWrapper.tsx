@@ -2,7 +2,11 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import React from 'react';
 import Icon from './ui/icon';
 
-const SectionHeader = () => {
+interface SectionWrapperProps {
+  children: React.ReactNode;
+}
+
+const SectionWrapper: React.FC<SectionWrapperProps> = ({ children }) => {
   return (
     <section className="w-full flex flex-col gap-2 md:gap-3 lg:gap-5">
       <div className="flex gap-2 md:gap-4 items-center">
@@ -18,8 +22,9 @@ const SectionHeader = () => {
           <Icon Shape={ArrowRight} className="bg-gray" />
         </div>
       </div>
+      <div className="flex gap-2 md:gap-4 flex-wrap">{children}</div>
     </section>
   );
 };
 
-export default SectionHeader;
+export default SectionWrapper;

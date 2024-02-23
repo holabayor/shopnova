@@ -23,10 +23,10 @@ const Header = () => {
 
         <div className="w-2/4 items-center">
           <label htmlFor="search" className="sr-only"></label>
-          <div className="relative">
+          <div className="hidden md:block relative">
             <Input
               placeholder="What are you looking for? "
-              className="hidden md:flex w-full border-none bg-[#f5f5f5] outline-none"
+              className="flex w-full border-none bg-[#f5f5f5] outline-none"
             />
             <Search className="flex md:absolute right-2 top-2" />
           </div>

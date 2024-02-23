@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 const Banner = () => {
   return (
     <section className="w-full flex">
-      <menu className="hidden md:block w-[250px] border-r">
+      <menu className="hidden lg:block p-8 w-[250px] border-r">
         <ol>Woman's Fashion</ol>
         <ol>Men's Fashion</ol>
         <ol>Electronics</ol>
@@ -18,7 +18,7 @@ const Banner = () => {
         <ol>Groceries & Pets</ol>
         <ol>Health & Beauty</ol>
       </menu>
-      <div className="w-full">
+      <div className="w-full p-2 md:p-8">
         <div className="flex justify-between bg-black items-center px-4 py-2">
           <div className="text-white">
             <h2 className="text-2xl md:text-5xl">Up to 10% off Voucher</h2>

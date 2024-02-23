@@ -1,17 +1,14 @@
 import Banner from '@/components/Banner';
+import BestSellingCategory from '@/components/BestSellers';
 import ProductCard from '@/components/ProductCard';
-import SectionHeader from '@/components/SectionHeader';
-import ProductSection from '@/components/SectionHeader';
-import Image from 'next/image';
+import SectionWrapper from '@/components/SectionWrapper';
 
 export default function Home() {
   return (
     <>
-      <h1>Homepage</h1>
       <Banner />
       {/* <ProductSection /> */}
-      <SectionHeader />
-      <ProductCard />
+      <BestSellingCategory />
     </>
   );
 }

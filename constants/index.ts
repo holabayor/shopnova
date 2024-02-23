@@ -100,3 +100,47 @@ export const footerLinks = [
     ],
   },
 ];
+
+import gamepad from '@/public/products/gamepad.png';
+import chair from '@/public/products/chair.png';
+import keyboard from '@/public/products/keyboard.png';
+import monitor from '@/public/products/monitor.png';
+
+export const products = [
+  {
+    name: 'HAVIT HV-G92 Gamepad',
+    image: gamepad,
+    price: 120,
+    originalPrice: 160,
+    discount: '-40%',
+    rating: 1,
+    numOfRatings: 88,
+  },
+  {
+    name: 'S-Series Comfort Chair',
+    image: chair,
+    price: 375,
+    originalPrice: 400,
+    discount: '-25%',
+    rating: 1,
+    numOfRatings: 88,
+  },
+  {
+    name: 'AK-900 Wired Keyboard',
+    image: keyboard,
+    price: 120,
+    originalPrice: 160,
+    discount: '-40%',
+    rating: 1,
+    numOfRatings: 88,
+  },
+  {
+    name: 'IPS LCD Gaming Monitor',
+    image: monitor,
+    price: 370,
+    originalPrice: 400,
+    discount: '-30%',
+    rating: 1,
+    numOfRatings: 88,
+  },
+];
