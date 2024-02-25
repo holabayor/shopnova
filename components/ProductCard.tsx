@@ -1,9 +1,7 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import gamepad from '@/public/products/gamepad.png';
 import Icon from './ui/icon';
 import { Eye, Heart, ShoppingCart } from 'lucide-react';
-import { number } from 'zod';
 
 interface ProductCardProps {
   name: string;
@@ -25,14 +23,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
   numOfRatings,
 }) => {
   return (
-    <div className="inline-block w-[250px] rounded-t-sm">
-      <div className="relative group bg-gray overflow-hidden">
-        <div className="flex justify-center p-4 mt-4">
+    <div className="hover:shadow-lg flex w-full">
+      <div className="relative w-1/2 group bg-slate-400 overflow-hidden rounded-md">
+        <div className="relative h-[170px] w-full mt-4 p-2 md:p-4">
           <Image
             src={image}
-            layout="fill"
             alt={name}
-            className="object-cover group-hover:scale-110 transition-all duration-500"
+            // fill
+            // style={{ objectFit: 'cover' }}
+            className="m-auto group-hover:scale-110 transition-all duration-500"
           />
         </div>
 
@@ -40,7 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <Icon
             Shape={Heart}
             size={18}
-            className="bg-white p-1 hover:scale-125 "
+            className="bg-white p-1 hover:scale-125"
           />
           <Icon
             Shape={Eye}
@@ -52,13 +51,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <ShoppingCart color="#ffffff" size={18} /> Add to Cart
         </div>
       </div>
-      <h6 className="text-black font-semibold">{name}</h6>
-      <div className="flex flex-row md:flex-col justify-between">
-        <p className="flex gap-4 font-semibold">
-          <span className="text-[#DB4444]">{price}</span>
-          <span className="text-slate-500 line-through">{originalPrice}</span>
-        </p>
-        {numOfRatings} Ratings
+      <div>
+        <h6 className="text-black font-semibold">{name}</h6>
+        <div className="flex flex-row md:flex-col justify-between">
+          <p className="flex gap-4 font-semibold">
+            <span className="text-[#DB4444]">${price}</span>
+            <span className="text-slate-500 line-through">
+              ${originalPrice}
+            </span>
+          </p>
+          {numOfRatings} Ratings
+        </div>
       </div>
     </div>
   );

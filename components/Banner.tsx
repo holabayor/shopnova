@@ -18,15 +18,25 @@ const Banner = () => {
         <ol>Groceries & Pets</ol>
         <ol>Health & Beauty</ol>
       </menu>
-      <div className="w-full p-2 md:p-8">
+      <div className="w-full">
         <div className="flex justify-between bg-black items-center px-4 py-2">
-          <div className="text-white">
-            <h2 className="text-2xl md:text-5xl">Up to 10% off Voucher</h2>
-            <p>
-              Shop Now <Icon Shape={ArrowRight} color="#ffffff" />
-            </p>
+          <div className=" w-1/2 text-white">
+            <p className="text-xs my-2">iPhone 14 Series</p>
+            <h2 className="text-md xs:text-lg sm:text-3xl md:text-5xl">
+              Up to 10% off Voucher
+            </h2>
+            <div className="group flex items-center">
+              <span className="border-b">Shop Now</span>{' '}
+              <Icon
+                Shape={ArrowRight}
+                color="#ffffff"
+                className="group-hover:translate-x-1"
+              />
+            </div>
           </div>
-          <Image src={iphonei4} object-fit="cover" alt="iphone deals" />
+          <div>
+            <Image src={iphonei4} object-fit="cover" alt="iphone deals" />
+          </div>
         </div>
       </div>
     </section>

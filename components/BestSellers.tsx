@@ -4,9 +4,10 @@ import { products } from '@/constants';
 
 export default function BestSellingCategory() {
   return (
-    <SectionWrapper>
+    <SectionWrapper title="Best Selling Products" subtitle="This Month">
       {products.map((product) => (
         <ProductCard
+          key={product.name}
           name={product.name}
           image={product.image}
           price={product.price}
