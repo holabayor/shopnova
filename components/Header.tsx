@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import Logo from './Logo';
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
+import Icon from './ui/icon';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,10 +33,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-6 items-center">
-          <ShoppingCart />
+        <div className="flex gap-2 md:gap-4 items-center">
+          <Icon Shape={Heart} />
+          <Icon Shape={ShoppingCart} />
 
-          <Heart />
           <Menu className="md:hidden" onClick={toggleMenu} />
         </div>
       </div>

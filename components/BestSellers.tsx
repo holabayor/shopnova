@@ -7,14 +7,14 @@ export default function BestSellingCategory() {
     <SectionWrapper title="Best Selling Products" subtitle="This Month">
       {products.map((product) => (
         <ProductCard
-          key={product.name}
-          name={product.name}
-          image={product.image}
+          key={product.id}
+          title={product.title}
+          thumbnail={product.thumbnail}
           price={product.price}
-          originalPrice={product.originalPrice}
-          discount={product.discount}
+          // originalPrice={product.originalPrice}
+          discountPercentage={product.discountPercentage}
           rating={product.rating}
-          numOfRatings={product.numOfRatings}
+          // numOfRatings={product.numOfRatings}
         />
       ))}
     </SectionWrapper>

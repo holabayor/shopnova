@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 const Banner = () => {
   return (
     <section className="w-full flex">
-      <menu className="hidden lg:block p-8 w-[250px] border-r">
+      <menu className="hidden lg:block pt-10 w-[250px] border-r">
         <ol>Woman's Fashion</ol>
         <ol>Men's Fashion</ol>
         <ol>Electronics</ol>
@@ -19,14 +19,14 @@ const Banner = () => {
         <ol>Health & Beauty</ol>
       </menu>
       <div className="w-full">
-        <div className="flex justify-between bg-black items-center px-4 py-2">
+        <div className="flex justify-between bg-black items-center ml-10 mt-10 px-4 py-2">
           <div className=" w-1/2 text-white">
             <p className="text-xs my-2">iPhone 14 Series</p>
-            <h2 className="text-md xs:text-lg sm:text-3xl md:text-5xl">
+            <h2 className="text-md xs:text-lg sm:text-3xl md:text-5xl font-semibold">
               Up to 10% off Voucher
             </h2>
             <div className="group flex items-center">
-              <span className="border-b">Shop Now</span>{' '}
+              <span className="border-b text-xs md:text-sm">Shop Now</span>{' '}
               <Icon
                 Shape={ArrowRight}
                 color="#ffffff"

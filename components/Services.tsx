@@ -4,7 +4,7 @@ import { Headset, ShieldCheck, Truck } from 'lucide-react';
 
 const Services = () => {
   return (
-    <div className="flex flex-wrap justify-around items-center text-xs">
+    <section className="flex flex-wrap justify-around items-center text-xs">
       <div className="flex flex-col items-center">
         <Icon Shape={Truck} size={18} color="#ffffff" className="bg-black" />
         <p className="font-semibold uppercase mt-2">free and fast delivery</p>
@@ -25,7 +25,7 @@ const Services = () => {
         <p className="font-semibold uppercase mt-2">free and fast delivery</p>
         <p className="">Free delivery for all orders above $140</p>
       </div>
-    </div>
+    </section>
   );
 };
 
