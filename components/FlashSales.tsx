@@ -2,9 +2,9 @@ import ProductCard from '@/components/ProductCard';
 import SectionWrapper from '@/components/SectionWrapper';
 import { products } from '@/constants';
 
-export default function BestSelling() {
+export default function FlashSales() {
   return (
-    <SectionWrapper title="Best Selling Products" subtitle="Categories">
+    <SectionWrapper title="Flash Sales" subtitle="Today's">
       {products.map((product) => (
         <ProductCard
           key={product.id}

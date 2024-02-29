@@ -2,7 +2,7 @@ import ProductCard from '@/components/ProductCard';
 import SectionWrapper from '@/components/SectionWrapper';
 import { products } from '@/constants';
 
-export default function BestSelling() {
+export default function Explore() {
   return (
     <SectionWrapper title="Best Selling Products" subtitle="Categories">
       {products.map((product) => (

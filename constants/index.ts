@@ -17,22 +17,16 @@ export const navLinks = [
   },
 ];
 
-export const stats = [
-  {
-    id: 'stats-1',
-    title: 'User Active',
-    value: '3800+',
-  },
-  {
-    id: 'stats-2',
-    title: 'Trusted by Company',
-    value: '230+',
-  },
-  {
-    id: 'stats-3',
-    title: 'Transaction',
-    value: '$230M+',
-  },
+export const categories = [
+  { id: '1', name: "Woman's Fashion" },
+  { id: '2', name: "Men's Fashion" },
+  { id: '3', name: 'Electronics' },
+  { id: '4', name: 'Home & Lifestyle' },
+  { id: '5', name: 'Medicine' },
+  { id: '6', name: 'Sport & Outdoor' },
+  { id: '7', name: "Baby's & Toys" },
+  { id: '8', name: 'Groceries & Pets' },
+  { id: '9', name: 'Health & Beauty' },
 ];
 
 export const footerLinks = [

@@ -63,7 +63,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <p className="flex gap-4 font-semibold">
             <span className="text-[#DB4444]">${price}</span>
             {discountPercentage && (
-              <span className="text-slate-400 line-through">${price}</span>
+              <span className="text-slate-400 line-through">
+                ${Number(price) + Number(price) * discountPercentage}
+              </span>
             )}
           </p>
           <div className="flex gap-2 items-center text-slate-400 font-medium">

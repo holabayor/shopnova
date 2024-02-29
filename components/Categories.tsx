@@ -1,15 +1,18 @@
-import ProductCard from '@/components/ProductCard';
+import CategoryCard from './CategoryCard';
 import SectionWrapper from '@/components/SectionWrapper';
 import { products } from '@/constants';
 
-export default function BestSelling() {
+export default function CategorySection() {
   return (
-    <SectionWrapper title="Best Selling Products" subtitle="Categories">
+    <SectionWrapper
+      title="Browse By Category"
+      subtitle="This Month"
+      products={false}
+    >
       {products.map((product) => (
-        <ProductCard
+        <CategoryCard
           key={product.id}
           title={product.title}
-          thumbnail={product.thumbnail}
           price={product.price}
           // originalPrice={product.originalPrice}
           discountPercentage={product.discountPercentage}

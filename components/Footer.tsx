@@ -39,12 +39,12 @@ const Footer = () => {
               <ul className="list-none">
                 {footerLink.links.map((link, index) => (
                   <li
-                    key={link.name}
+                    key={link.title}
                     className={`text-xs hover:text-secondary cursor-pointer ${
                       index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'
                     }`}
                   >
-                    {link.name}
+                    {link.title}
                   </li>
                 ))}
               </ul>
