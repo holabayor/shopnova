@@ -7,9 +7,9 @@ export default function NewArrivals() {
   return (
     <div>
       <SectionHeader title="New Arrival" subtitle="Featured" />
-      <div className="relative flex overflow-x-auto sm:overflow-x-visible gap-4 py-4 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex overflow-x-auto sm:overflow-x-visible gap-4 py-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
         {/* Each child div now uses flex-shrink-0 for mobile and adjusts to grid layout on larger screens */}
-        <div className="flex-shrink-0 sm:flex-shrink w-full h-96 sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
+        <div className="relative flex-shrink-0 sm:flex-shrink w-full h-48 sm:h-96 sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
           <Image
             src={ps5}
             alt={'PS5 Slim Console'}
@@ -19,7 +19,7 @@ export default function NewArrivals() {
               objectPosition: 'center center',
             }}
           />
-          <div className="absolute bottom-0 left-0 p-4">
+          <div className="absolute bottom-0 left-0 p-4 text-white">
             <h4 className="font-semibold">Play Station</h4>
             <p className="text-xs">
               Black and White version of the PS5 coming out on sale.
@@ -29,8 +29,44 @@ export default function NewArrivals() {
         </div>
 
         {/* Example repeated item */}
-        <div className="flex-shrink-0 sm:flex-shrink w-full sm:w-auto bg-black bg-opacity-50 overflow-hidden">
-          {/* Your Image and content */}
+        {/* <div className="grid grid-rows-2 gap-4"> */}
+        <div className="grid grid-rows-2 gap-4 h-96">
+          <div className="relative flex-shrink-0 sm:flex-shrink w-full h-full sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
+            <Image
+              src={ps5}
+              alt={'PS5 Slim Console'}
+              fill
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center center',
+              }}
+            />
+            <div className="absolute bottom-0 left-0 p-4 text-white">
+              <h4 className="font-semibold">Play Station</h4>
+              <p className="text-xs">
+                Black and White version of the PS5 coming out on sale.
+              </p>
+              <Link href="/shop-now">Shop Now</Link>
+            </div>
+          </div>
+          <div className="relative flex-shrink-0 sm:flex-shrink w-full h-full sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
+            <Image
+              src={ps5}
+              alt={'PS5 Slim Console'}
+              fill
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center center',
+              }}
+            />
+            <div className="absolute bottom-0 left-0 p-4 text-white">
+              <h4 className="font-semibold">Play Station</h4>
+              <p className="text-xs">
+                Black and White version of the PS5 coming out on sale.
+              </p>
+              <Link href="/shop-now">Shop Now</Link>
+            </div>
+          </div>
         </div>
 
         {/* Additional items would go here */}
