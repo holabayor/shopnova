@@ -32,8 +32,8 @@ const Services = () => {
           <p className="">Free delivery for all orders above $140</p>
         </div>
       </div>
-      <div className="absolute bg-gray right-0 bottom-5 rounded-full p-1 py-2 cursor-pointer">
-        <ArrowUpIcon strokeWidth={1} className="animate-bounce" />
+      <div className="absolute bg-gray right-0 bottom-5 rounded-full p-2 cursor-pointer">
+        <ArrowUpIcon strokeWidth={1.5} className="hover:animate-bounce" />
       </div>
     </section>
   );
