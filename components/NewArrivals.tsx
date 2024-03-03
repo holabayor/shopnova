@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import ps5 from '@/public/arrivals/ps5-slim.png';
+import amazonecho from '@/public/arrivals/amazon-echo.png';
+import woman from '@/public/arrivals/woman-wearing-hat.png';
 import SectionHeader from './SectionHeader';
 import Image from 'next/image';
 
@@ -33,7 +35,7 @@ export default function NewArrivals() {
         <div className="grid grid-rows-2 gap-4 h-96">
           <div className="relative flex-shrink-0 sm:flex-shrink w-full h-full sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
             <Image
-              src={ps5}
+              src={amazonecho}
               alt={'PS5 Slim Console'}
               fill
               style={{
@@ -51,8 +53,8 @@ export default function NewArrivals() {
           </div>
           <div className="relative flex-shrink-0 sm:flex-shrink w-full h-full sm:w-auto bg-black bg-opacity-50 overflow-hidden px-8">
             <Image
-              src={ps5}
-              alt={'PS5 Slim Console'}
+              src={woman}
+              alt={'Woman wearing hat'}
               fill
               style={{
                 objectFit: 'contain',
