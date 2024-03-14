@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="container border-b py-4">
+      <nav className="container border-b py-4 z-10">
         <div className="flex justify-between items-center">
           <Logo />
 
@@ -58,8 +58,8 @@ const Header = () => {
             <Menu className="md:hidden" onClick={toggleMenu} />
             <AccountMenu isMenuOpen={isProfileMenuOpen} />
           </div>
-          <MobileMenu isMenuOpen={isMobileMenuOpen} onClose={closeMenu} />
         </div>
+        <MobileMenu isMenuOpen={isMobileMenuOpen} onClose={closeMenu} />
       </nav>
     </>
   );
