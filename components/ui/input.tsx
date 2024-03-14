@@ -38,6 +38,8 @@ const InputWithBottomBorder = React.forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
+InputWithBottomBorder.displayName = 'InputWithBottomBorder';
+
 const SearchBox = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, ...props }, ref) => {
     return (

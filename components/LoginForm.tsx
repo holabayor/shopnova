@@ -75,7 +75,7 @@ const LoginForm = () => {
           </Link>
         </div>
         <div className="flex gap-2 justify-center text-xs">
-          Don't have an account?
+          {"Don't have an account?"}
           <Link
             href={'/signup'}
             className="font-normal border-b border-b-slate-500 hover:border-black transition-all"
