@@ -1,18 +1,30 @@
 'use client';
 
-import { Heart, Search, ShoppingCart, Menu } from 'lucide-react';
+import { Heart, Search, ShoppingCart, Menu, User } from 'lucide-react';
 import { Input } from './ui/input';
 import Logo from './Logo';
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 import Icon from './ui/icon';
+import AccountMenu from './AccountMenu';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  const toggleProfileMenu = () => {
+    console.log('Toggle profile menu');
+    setIsProfileMenuOpen(!isProfileMenuOpen);
+    console.log('Toggle profile value', isProfileMenuOpen);
+  };
+
+  const closeProfileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   const closeMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -38,7 +50,17 @@ const Header = () => {
           <Icon Shape={ShoppingCart} />
 
           <Menu className="md:hidden" onClick={toggleMenu} />
+          <Icon
+            Shape={User}
+            className="bg-red"
+            color="#ffffff"
+            onClick={toggleProfileMenu}
+          />
         </div>
+        <AccountMenu
+          isMenuOpen={isProfileMenuOpen}
+          // onClose={closeProfileMenu}
+        />
       </div>
       <MobileMenu isMenuOpen={isMobileMenuOpen} onClose={closeMenu} />
     </nav>

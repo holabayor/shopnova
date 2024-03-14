@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} flex flex-col min-h-screen bg-background antialiased`}
+        className={`${poppins.className} flex flex-col min-h-screen bg-background antialiased overflow-x-hidden`}
       >
         <Header />
         <main className="container flex flex-col flex-grow">{children}</main>
