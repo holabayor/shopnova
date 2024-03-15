@@ -22,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   price,
   discountPercentage,
   rating,
-  numOfRatings,
+  numOfRatings = 19,
 }) => {
   return (
     <div className="hover:shadow-lg">
@@ -38,7 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
         {discountPercentage && (
           <div className="absolute top-3 left-3 bg-[#DB4444] text-sm text-white py-1 px-2 rounded-sm">
-            -{discountPercentage}
+            -{Math.trunc(discountPercentage)}%
           </div>
         )}
         <div className="absolute top-0 right-0 flex flex-col items-center gap-2 p-2 translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in">

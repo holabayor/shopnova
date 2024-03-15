@@ -24,6 +24,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({
       <div className="flex justify-between items-center">
         <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
           {title}
+          <span className="ml-10">Time goes here</span>
         </h2>
         <div className="hidden md:flex items-center gap-2">
           <Icon Shape={ArrowLeft} className="bg-gray" />
