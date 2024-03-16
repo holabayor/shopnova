@@ -22,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   price,
   discountPercentage,
   rating,
-  numOfRatings = 19,
+  numOfRatings,
 }) => {
   return (
     <div className="hover:shadow-lg">
@@ -64,7 +64,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <span className="text-[#DB4444]">${price}</span>
             {discountPercentage && (
               <span className="text-slate-400 line-through">
-                ${Number(price) + Number(price) * discountPercentage}
+                $
+                {Math.trunc(
+                  Number(price) - (Number(price) * discountPercentage) / 100
+                )}
               </span>
             )}
           </p>
@@ -76,7 +79,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               color2={'#ffd700'}
               edit={false}
             />
-            ({numOfRatings})
+            {numOfRatings && numOfRatings}
           </div>
         </div>
       </div>
